@@ -10,6 +10,7 @@ let canDelete;
 const defaultTheme = document.querySelector(".default-theme");
 const purpleTheme = document.querySelector(".purple-theme");
 const blueTheme = document.querySelector(".blue-theme");
+const greenTheme = document.querySelector(".green-theme");
 
 const buttons = document.querySelectorAll("button");
 let displayElement = document.querySelector(".main-display");
@@ -22,7 +23,7 @@ purpleTheme.addEventListener("click", e => {
     root.style.setProperty("--color2", "rgb(184, 145, 200)");
     root.style.setProperty("--color3", "rgb(217, 179, 253)");
     root.style.setProperty("--color4", "rgb(184, 113, 250)");
-    root.style.setProperty("--color5", "rgb(200, 162, 236)");
+    root.style.setProperty("--color5", "rgb(184, 113, 250)");
 });
 
 defaultTheme.addEventListener("click", e => {
@@ -30,7 +31,7 @@ defaultTheme.addEventListener("click", e => {
     root.style.setProperty("--color2", "rgb(0, 0, 0)");
     root.style.setProperty("--color3", "rgb(120, 114, 127)");
     root.style.setProperty("--color4", "rgb(42, 42, 42)");
-    root.style.setProperty("--color5", "rgb(125, 122, 128)");
+    root.style.setProperty("--color5", "rgb(42, 42, 42)");
 });
 
 blueTheme.addEventListener("click", e => {
@@ -38,7 +39,15 @@ blueTheme.addEventListener("click", e => {
     root.style.setProperty("--color2", "rgb(102, 119, 231)");
     root.style.setProperty("--color3", "rgb(47, 17, 128)");
     root.style.setProperty("--color4", "rgb(22, 73, 124)");
-    root.style.setProperty("--color5", "rgb(87, 78, 215)");
+    root.style.setProperty("--color5", "rgb(22, 73, 124)");
+});
+
+greenTheme.addEventListener("click", e => {
+    root.style.setProperty("--color1", "rgb(255, 255, 255)");
+    root.style.setProperty("--color2", "rgb(118, 238, 158)");
+    root.style.setProperty("--color3", "rgb(37, 110, 75)");
+    root.style.setProperty("--color4", "rgb(20, 64, 43)");
+    root.style.setProperty("--color5", "rgb(20, 64, 43)");
 });
 
 function pressButton() {

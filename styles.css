@@ -1,22 +1,38 @@
 :root {
     /* font color */
-    --color1: rgb(211, 198, 53);
+    --color1: rgb(255, 255, 255);
     /* container color */
-    --color2: rgb(102, 119, 231);
-    /* display / number buttons */
-    --color3: rgb(47, 17, 128);
+    --color2: rgb(118, 238, 158);
+    /* display and number buttons */
+    --color3: rgb(37, 110, 75);
     /* c, = and back */
-    --color4: rgb(22, 73, 124);
+    --color4: rgb(20, 64, 43);
     /* border operator */
-    --color5: rgb(87, 78, 215);
+    --color5: rgb(20, 64, 43);
 }
 
 h1 {
     color: var(--color2);
 }
 
-.themes button {
-    color: var(--color2);
+.default-theme {
+    color: black;
+    background-color: rgb(120, 114, 127);
+}
+
+.purple-theme {
+    color: rgb(113, 69, 115);
+    background-color: rgb(184, 145, 200);
+}
+
+.blue-theme {
+    color: rgb(211, 198, 53);
+    background-color: rgb(102, 119, 231);
+}
+
+.green-theme {
+    color: rgb(255, 255, 255);
+    background-color: rgb(118, 238, 158);
 }
 
 * {
@@ -37,6 +53,9 @@ body {
     width: 100px;
     height: 30px;
     border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
 }
 
 .themes {
@@ -122,6 +141,7 @@ body {
 
 #sum {
     background-color: var(--color4);
+    width: 204px;
 }
 
 #sum:active {
@@ -146,7 +166,6 @@ body {
 
 #back {
     background-color: var(--color4);
-    width: 204px;
 }
 
 #back:active {
