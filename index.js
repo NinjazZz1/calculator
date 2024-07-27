@@ -142,11 +142,17 @@ function operate() {
     secondNumber = undefined;
     display = "";
 
-    let chars = sum.length;
-    let roundedSum = parseFloat(sum);
-    if (chars > 12) {
-        roundedSum = roundedSum.toFixed(2);
+    if (sum == "Infinity") {
+        appendDisplay("ERROR!");
+        chainedString = "";
+        displayElement.innerHTML = display;
+    } else {
+        let chars = sum.length;
+        let roundedSum = parseFloat(sum);
+        if (chars > 12) {
+            roundedSum = roundedSum.toFixed(2);
+        }
+        appendDisplay(roundedSum);
+        canDelete = false;
     }
-    appendDisplay(roundedSum);
-    canDelete = false;
 }
