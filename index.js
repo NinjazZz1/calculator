@@ -27,7 +27,7 @@ purpleTheme.addEventListener("click", e => {
 });
 
 defaultTheme.addEventListener("click", e => {
-    root.style.setProperty("--color1", "rgb(0, 0, 0)");
+    root.style.setProperty("--color1", "rgb(255, 255, 255)");
     root.style.setProperty("--color2", "rgb(0, 0, 0)");
     root.style.setProperty("--color3", "rgb(120, 114, 127)");
     root.style.setProperty("--color4", "rgb(42, 42, 42)");
